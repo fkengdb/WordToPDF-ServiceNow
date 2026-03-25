@@ -54,7 +54,6 @@ Para realizar as conversões, a extensão consome a API oficial do iLovePDF. É 
    - *Convertendo...*
    - *Baixando...*
 5. Alcançando os 100%, o arquivo convertido será aberto quase instantaneamente em uma **nova aba** do seu navegador, utilizando o visualizador nativo de PDF.
-6. A partir dessa nova aba de visualização, você pode ler o documento e, se desejar salvá-lo no seu computador com o nome original, basta clicar no botão roxo **"Baixar .pdf"** fixado no topo da tela.
 
 ---
 **Nota:** A injeção da interface do "dropzone" da extensão está programada (via `manifest.json` e scripts de injeção) restritamente para as páginas dentro do *ServiceNow* atendendo às URLs do Change Request e atua apenas se a altura da tela for superior a 300px (para prevenir injeções em frames reduzidos do sistema).
