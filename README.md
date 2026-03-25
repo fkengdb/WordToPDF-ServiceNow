@@ -1,0 +1,68 @@
+# Word to PDF (Service Now) - Extensão do Chrome
+
+Esta é uma extensão para o Google Chrome que facilita a conversão de documentos Word (`.docx`) para PDF diretamente da interface da plataforma ServiceNow. A extensão adiciona uma zona de _drag and drop_ (arrastar e soltar) na tela, convertendo os arquivos em segundo plano usando a API do iLovePDF.
+
+## 🚀 Funcionalidades
+
+- **Widget Flutuante:** Um botão flutuante discreto injetado na página de *Change Request* do ServiceNow.
+- **Arrastar e Soltar (Drag & Drop):** Basta arrastar um arquivo Word local ou o link de um arquivo e soltá-lo no widget.
+- **Conversão Automática:** O arquivo é processado na nuvem via API do iLovePDF e o download do PDF resultante se inicia automaticamente.
+- **Trilha de Progresso:** Acompanhe o status do processamento (Autenticando, Upload, Convertendo, Baixando) e a porcentagem em tempo real.
+- **Controle de Créditos:** Visualize quantos créditos mensais da sua conta iLovePDF ainda estão disponíveis, mostrados diretamente no widget da tela. (** Não funciona ainda)
+
+## 🛠️ Instalação (Modo Desenvolvedor)
+
+Necessário carregá-la manualmente no seu navegador para uso. (Testado no Chrome & Edge)
+
+### Chrome
+1. Faça o download e extrai a pasta onde desejar no seu computador.
+2. Abra o Google Chrome e digite `chrome://extensions/` na barra de endereços (ou abra o menu > Extensões > Gerenciar extensões).
+3. No canto superior direito da página de extensões, ative a chave **Modo do desenvolvedor**.
+4. Em seguida, clique no botão **Carregar sem compactação** que surgirá no canto superior esquerdo.
+5. Selecione a pasta no seu computador onde os arquivos da extensão (`manifest.json`, `background.js`, etc.) estão localizados e confirme.
+6. A extensão e seu ícone devem aparecer na sua lista de extensões instaladas. Recomendado fixa-lá na barra superior (clicando no ícone de "quebra-cabeça" e no alfinete).
+
+### Microsoft Edge
+1. Faça o download e extrai a pasta onde desejar no seu computador.
+2. Abra o Edge e digite `edge://extensions/` na barra de endereços.
+3. No menu lateral, ative a chave **Modo de desenvolvedor**.
+4. Clique no botão **Carregar sem compactação** (canto superior direito).
+5. Selecione a pasta com os arquivos da extensão e confirme.
+
+### Mozilla Firefox
+1. Faça o download e extrai a pasta onde desejar no seu computador.
+2. Abra o Firefox e digite `about:debugging#/runtime/this-firefox` na barra de endereços.
+3. Na seção "Extensões Temporárias", clique no botão **Carregar extensão temporária...**.
+4. Navegue até a pasta da extensão e selecione o arquivo `manifest.json`.
+5. *Nota:* No Firefox, extensões temporárias podem ser descarregadas ao fechar o navegador, precisando repetir o processo ao abri-lo 
+
+## ⚙️ Configuração Inicial (Chave da API)
+
+Para realizar as conversões, a extensão consome a API oficial do iLovePDF. É preciso configurar uma chave de autenticação (Public Key) antes da primeira utilização:
+
+1. Acesse o portal de desenvolvedores do iLovePDF: [https://www.iloveapi.com/user/projects](https://www.iloveapi.com/user/projects)
+2. Acesse a sua conta (ou crie uma nova) e verifique seu projeto para obter a **Chave Pública** (Public Key).
+3. No próprio Chrome, clique no ícone da extensão "Word to PDF (Service Now)" na barra do navegador superior.
+4. Um pequeno popup vai se abrir. Cole a sua Chave Pública obtida no campo de texto **Public Key iLovePDF**.
+5. Clique em **Salvar Chave**. Uma mensagem de confirmação (alert) atestará o sucesso.
+
+## 💡 Como Usar
+
+1. Acesse o sistema do ServiceNow na rota coberta pela extensão (extensão só é ativada para uso nesta url: https://dominio/now/nav/ui/classic/params/target/change_request.do%*).
+2. Aguarde a página carregar: repare que um pequeno quadrado/botão roxo com texto **.docx** aparecerá flutuando no canto inferior direito do navegador.
+3. Arraste e solte o documento word anexo a change (`.doc`, `.docx`) sobre este quadrado flutuante.
+4. Acompanhe a barrinha verde de progresso e o indicativo textual da etapa logo acima dela:
+   - *Autenticando...*
+   - *Iniciando...*
+   - *Upload...*
+   - *Convertendo...*
+   - *Baixando...*
+5. Alcançando os 100%, o download do arquivo convertido em extensão `.pdf` será concluído pelo seu navegador automaticamente.
+
+## 💻 Tecnologias Utilizadas
+- **HTML / CSS / JavaScript** puros e Vanilla.
+- **Manifest V3**, o atual padrão tecnológico das extensões do Google Chrome.
+- Integração da **iLovePDF API** por requisições assíncronas (REST).
+
+---
+**Nota:** A injeção da interface do "dropzone" da extensão está programada (via `manifest.json` e scripts de injeção) restritamente para as páginas dentro do *ServiceNow* atendendo às URLs do Change Request e atua apenas se a altura da tela for superior a 300px (para prevenir injeções em frames reduzidos do sistema).
