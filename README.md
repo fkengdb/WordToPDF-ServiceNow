@@ -55,10 +55,5 @@ Para realizar as conversões, a extensão consome a API oficial do iLovePDF. É 
    - *Baixando...*
 5. Alcançando os 100%, o download do arquivo convertido em extensão `.pdf` será concluído pelo seu navegador automaticamente.
 
-## 💻 Tecnologias Utilizadas
-- **HTML / CSS / JavaScript** puros e Vanilla.
-- **Manifest V3**, o atual padrão tecnológico das extensões do Google Chrome.
-- Integração da **iLovePDF API** por requisições assíncronas (REST).
-
 ---
 **Nota:** A injeção da interface do "dropzone" da extensão está programada (via `manifest.json` e scripts de injeção) restritamente para as páginas dentro do *ServiceNow* atendendo às URLs do Change Request e atua apenas se a altura da tela for superior a 300px (para prevenir injeções em frames reduzidos do sistema).
