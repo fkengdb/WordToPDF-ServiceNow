@@ -2,13 +2,13 @@
 
 ![image](https://github.com/fkengdb/WordToPDF-ServiceNow/blob/main/Screenshot_2%20(1).png?raw=true)
 
-Esta é uma extensão para o Google Chrome que facilita a conversão de documentos Word (`.docx`) para PDF diretamente da interface da plataforma ServiceNow. A extensão adiciona uma zona de _drag and drop_ (arrastar e soltar) na tela, convertendo os arquivos em segundo plano usando a API do iLovePDF. (125 conversões por mês gratuitamente)
+Esta é uma extensão para a conversão de documentos Word (`.docx`) para PDF diretamente da interface da plataforma ServiceNow. A extensão adiciona uma zona de _drag and drop_ (arrastar e soltar) na tela, convertendo os arquivos em segundo plano via API do iLovePDF e abrindo o PDF resultante instantaneamente em uma nova aba para visualização. (125 conversões por mês gratuitamente)
 
 ## 🛠️ Instalação (Modo Desenvolvedor)
 
 Necessário carregá-la manualmente no seu navegador para uso. (Testado no Chrome & Edge)
 
-[Download Extensão](https://github.com/fkengdb/WordToPDF-ServiceNow/releases/download/v1.0.0/WordToPdf_ServiceNow_v1.0.zip)
+[Download Extensão](https://github.com/fkengdb/WordToPDF-ServiceNow/releases/download/v1.0.1/WordToPdf_ServiceNow_v1.0.1.zip)
 
 ### Chrome
 1. Faça o download e extrai a pasta onde desejar no seu computador.
@@ -53,7 +53,8 @@ Para realizar as conversões, a extensão consome a API oficial do iLovePDF. É 
    - *Upload...*
    - *Convertendo...*
    - *Baixando...*
-5. Alcançando os 100%, o download do arquivo convertido em extensão `.pdf` será concluído pelo seu navegador automaticamente.
+5. Alcançando os 100%, o arquivo convertido será aberto quase instantaneamente em uma **nova aba** do seu navegador, utilizando o visualizador nativo de PDF.
+6. A partir dessa nova aba de visualização, você pode ler o documento e, se desejar salvá-lo no seu computador com o nome original, basta clicar no botão roxo **"Baixar .pdf"** fixado no topo da tela.
 
 ---
 **Nota:** A injeção da interface do "dropzone" da extensão está programada (via `manifest.json` e scripts de injeção) restritamente para as páginas dentro do *ServiceNow* atendendo às URLs do Change Request e atua apenas se a altura da tela for superior a 300px (para prevenir injeções em frames reduzidos do sistema).
