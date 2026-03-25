@@ -22,7 +22,7 @@ Necessário carregá-la manualmente no seu navegador para uso. (Testado no Chrom
 1. Faça o download e extrai a pasta onde desejar no seu computador.
 2. Abra o Edge e digite `edge://extensions/` na barra de endereços.
 3. No menu lateral, ative a chave **Modo de desenvolvedor**.
-4. Clique no botão **Carregar sem compactação** (canto superior direito).
+4. Clique no botão **Carregar sem pacote** (canto superior direito).
 5. Selecione a pasta com os arquivos da extensão e confirme.
 
 ### Mozilla Firefox
