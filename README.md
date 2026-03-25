@@ -44,7 +44,7 @@ Para realizar as conversões, a extensão consome a API oficial do iLovePDF. É 
 
 ## 💡 Como Usar
 
-1. Acesse o sistema do ServiceNow na rota coberta pela extensão (extensão só é ativada para uso nesta url: https://dominio/now/nav/ui/classic/params/target/change_request.do%*).
+1. Acesse o sistema do ServiceNow na rota coberta pela extensão (extensão só é ativada para uso na url: https://dominio/now/nav/ui/classic/params/target/change_request.do%*).
 2. Aguarde a página carregar: repare que um pequeno quadrado/botão roxo com texto **.docx** aparecerá flutuando no canto inferior direito do navegador.
 3. Arraste e solte o documento word anexo a change (`.doc`, `.docx`) sobre este quadrado flutuante.
 4. Acompanhe a barrinha verde de progresso e o indicativo textual da etapa logo acima dela:
