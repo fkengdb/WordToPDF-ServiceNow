@@ -38,7 +38,7 @@ Para realizar as conversões, a extensão consome a API oficial do iLovePDF. É 
 
 1. Acesse o portal de desenvolvedores do iLovePDF: [https://www.iloveapi.com/user/projects](https://www.iloveapi.com/user/projects)
 2. Acesse a sua conta (ou crie uma nova) e verifique seu projeto para obter a **Chave Pública** (Public Key).
-3. No próprio Chrome, clique no ícone da extensão "Word to PDF (Service Now)" na barra do navegador superior.
+3. No próprio navegador, clique no ícone da extensão "Word to PDF (Service Now)" na barra superior.
 4. Um pequeno popup vai se abrir. Cole a sua Chave Pública obtida no campo de texto **Public Key iLovePDF**.
 5. Clique em **Salvar Chave**. Uma mensagem de confirmação (alert) atestará o sucesso.
 
