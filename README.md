@@ -1,6 +1,6 @@
 # Word to PDF (Service Now) - Extensão do Chrome
 
-![image](https://github.com/fkengdb/WordToPDF-ServiceNow/blob/main/Screenshot_2%20(1).png?raw=true)
+![image](https://github.com/fkengdb/WordToPDF-ServiceNow/blob/main/Screenshot_2%20(2).png?raw=true)
 
 Esta é uma extensão para a conversão de documentos Word (`.docx`) para PDF diretamente da interface da plataforma ServiceNow. A extensão adiciona uma zona de _drag and drop_ (arrastar e soltar) na tela, convertendo os arquivos em segundo plano via API do iLovePDF e abrindo o PDF resultante instantaneamente em uma nova aba para visualização. (125 conversões por mês gratuitamente)
 
