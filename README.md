@@ -8,7 +8,7 @@ Esta é uma extensão para a conversão de documentos Word (`.docx`) para PDF di
 
 Necessário carregá-la manualmente no seu navegador para uso. (Testado no Chrome & Edge)
 
-[Download Extensão](https://github.com/fkengdb/WordToPDF-ServiceNow/releases/download/v1.0.1/WordToPdf_ServiceNow_v1.0.1.zip)
+[Download Extensão](https://github.com/fkengdb/WordToPDF-ServiceNow/releases/download/v1.0.2/WordToPdf_ServiceNow_v1.0.2.zip)
 
 ### Chrome
 1. Faça o download e extrai a pasta onde desejar no seu computador.
